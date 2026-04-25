@@ -3,12 +3,12 @@ namespace RespawnTimer
     using Exiled.Events.EventArgs.Server;
 
     /// <summary>
-    /// обработчик серверных событий для управления корутиной.
+    /// обработчик серверных событий для управления корутиной
     /// </summary>
     public class ServerEventHandler
     {
         /// <summary>
-        /// ожидание игроков — останавливаем корутину.
+        /// ожидание игроков — останавливаем корутину
         /// </summary>
         public void OnWaitingForPlayers()
         {
@@ -16,7 +16,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// старт раунда — запускаем корутину.
+        /// старт раунда — запускаем корутину
         /// </summary>
         public void OnRoundStarted()
         {
@@ -24,7 +24,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// конец раунда — останавливаем корутину.
+        /// конец раунда — останавливаем корутину
         /// </summary>
         public void OnRoundEnded(RoundEndedEventArgs ev)
         {
@@ -32,7 +32,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// рестарт раунда — останавливаем корутину.
+        /// рестарт раунда  останавливаем корутину
         /// </summary>
         public void OnRestartingRound()
         {
