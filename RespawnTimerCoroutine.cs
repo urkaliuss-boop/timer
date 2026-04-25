@@ -15,14 +15,14 @@ namespace RespawnTimer
     using Respawning.Waves;
 
     /// <summary>
-    /// корутина таймера респавна, отображает хинт спектаторам.
+    /// корутина таймера респавна, отображает хинт спектаторам
     /// </summary>
     public static class RespawnTimerCoroutine
     {
         /// <summary>
-        /// основной цикл отображения таймера.
+        /// основной цикл отображения таймера
         /// </summary>
-        /// <returns>корутина MEC.</returns>
+        /// <returns>корутина MEC</returns>
         public static IEnumerator<float> RunTimerLoop()
         {
             while (Round.InProgress)
@@ -57,7 +57,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// собирает текст хинта в зависимости от состояния респавна.
+        /// собирает текст хинта в зависимости от состояния респавна
         /// </summary>
         private static string BuildHintMessage()
         {
@@ -72,7 +72,7 @@ namespace RespawnTimer
                 return FormatEffectHint(teamName, teamColor);
             }
 
-            // фаза ожидания — ищем ближайший таймер
+            // фаза ожидания ищем ближайший таймер
             float closestTime = float.MaxValue;
 
             foreach (SpawnableWaveBase wave in WaveManager.Waves)
@@ -108,7 +108,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// хинт обратного отсчёта (команда ещё не выбрана).
+        /// хинт обратного отсчёта (команда ещё не выбрана)
         /// </summary>
         private static string FormatTimerHint(int minutes, int seconds)
         {
@@ -132,7 +132,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// хинт при выбранной команде (транспорт едет).
+        /// хинт при выбранной команде
         /// </summary>
         private static string FormatEffectHint(string teamName, string teamColor)
         {
@@ -144,7 +144,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// возвращает имя команды по фракции.
+        /// возвращает имя команды по фракции
         /// </summary>
         private static string GetTeamDisplayName(SpawnableFaction faction)
         {
@@ -162,7 +162,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// возвращает hex-цвет для фракции.
+        /// возвращает hex-цвет для фракции
         /// </summary>
         private static string GetTeamColor(SpawnableFaction faction)
         {
