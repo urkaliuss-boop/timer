@@ -5,7 +5,7 @@ namespace RespawnTimer
     using MEC;
 
     /// <summary>
-    /// плагин таймера респавна, показывает хинт спектаторам.
+    /// плагин таймера респавна, показывает хинт спектаторам
     /// </summary>
     public class RespawnTimerPlugin : Plugin<RespawnTimerConfig>
     {
@@ -19,7 +19,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// Gets singleton экземпляр плагина.
+        /// Gets singleton
         /// </summary>
         public static RespawnTimerPlugin Instance => singleton;
 
@@ -61,7 +61,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// запускает корутину хинтов.
+        /// запускает корутину хинтов
         /// </summary>
         public void StartTimerCoroutine()
         {
@@ -70,7 +70,7 @@ namespace RespawnTimer
         }
 
         /// <summary>
-        /// останавливает корутину хинтов.
+        /// останавливает корутину хинтов
         /// </summary>
         public void StopTimerCoroutine()
         {
